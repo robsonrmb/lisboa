@@ -1,3 +1,4 @@
+<!-- topo -->
 <div class="container-fluid bg-topo">
   <header class="container">
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -28,4 +29,35 @@
       </div>
     </nav>
   </header>
+</div>
+
+<!-- slide show -->
+<div class="container-fluid my-2">
+  <div id="slideshow" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+      <li data-target="#slideshow" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="#">
+          <img src="../../../../assets/img/banner1.jpg" class="d-block w-100" alt="Primeiro slide.">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="#">
+          <img src="../../../../assets/img/banner2.jpg" class="d-block w-100" alt="Segundo slide.">
+        </a>
+      </div>
+
+      <a href="#slideshow" class="carousel-control-prev" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a href="#slideshow" class="carousel-control-next" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+  </div>
 </div>
