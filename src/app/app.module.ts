@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PrincipalModule } from './lisboa/componentes/principal';
+
+import { SiteModule, PrincipalModule } from './lisboa/componentes';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { PrincipalModule } from './lisboa/componentes/principal';
   ],
   imports: [
     BrowserModule,
+    SiteModule,
     PrincipalModule,
     AppRoutingModule
   ],

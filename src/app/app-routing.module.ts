@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PrincipalComponent } from './lisboa/componentes/principal';
+
+import { SiteComponent, PrincipalComponent } from './lisboa/componentes';
 
 const routes: Routes = [
+  {path: 'site', component: SiteComponent},
   {path: 'principal', component: PrincipalComponent},
 
-  {path: '', redirectTo: '/principal', pathMatch: 'full'},
-  {path: '**', redirectTo: '/principal', pathMatch: 'full'}
+  {path: '', redirectTo: '/site', pathMatch: 'full'},
+  {path: '**', redirectTo: '/site', pathMatch: 'full'}
 ];
 
 @NgModule({
